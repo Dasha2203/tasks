@@ -1,0 +1,65 @@
+@import "../base/variables";
+
+.services {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    padding: 20px 20px;
+    width: 100%;
+    max-width: 968px;
+    overflow: hidden;
+
+    @media screen and (max-width: 968px) {
+      max-width: 662px;
+    }
+
+    @media screen and (max-width: 652px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
+  }
+
+  &__card {
+    width: 33.33%;
+    min-width: 306px;
+    border: 1px solid $secondary_color;
+
+    &:not(:nth-child(3n + 1)) {
+      border-left: none;
+    }
+
+    @media screen and (max-width: 968px) {
+      &:not(:nth-child(3n + 1)) {
+        border: 1px solid $secondary_color;
+      }
+
+      &:nth-child(2n + 2) {
+        border-left: none;
+      }
+    }
+
+    @media screen and (max-width: 652px) {
+      width: 100%;
+
+      &:nth-child(2n + 2) {
+        border: 1px solid $secondary_color;
+      }
+    }
+  }
+}

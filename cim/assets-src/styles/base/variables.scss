@@ -1,0 +1,23 @@
+// fonts
+$primary_font: "Open Sans", 'Roboto', 'Segoe UI','Arial', sans-serif;
+$secondary_font: 'Montserrat', sans-serif;
+
+//colors
+$primary_color: #282828;
+$secondary_color: #0D274D;
+$dark_color: #000000;
+$light_color: #FFFFFF;
+$success_color: #0E9A0B;
+$active_color: #00BCEB;
+$active-light_color: rgba(0, 187, 234, 0.4);
+
+// break points
+$break-point_mobile: 767px;
+$break-point_tablet: 1024px;
+
+%reset-text-style {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
