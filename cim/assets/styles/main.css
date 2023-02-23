@@ -382,6 +382,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .services .container {
+    padding: 20px 10px;
     width: 100%;
   }
 }
@@ -419,5 +420,10 @@ button {
   }
   .services__card:nth-child(2n+2) {
     border: 1px solid #0D274D;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services__card {
+    min-width: auto;
   }
 }
