@@ -12,8 +12,9 @@ $active_color: #00BCEB;
 $active-light_color: rgba(0, 187, 234, 0.4);
 
 // break points
-$break-point_mobile: 767px;
-$break-point_tablet: 1024px;
+$break-point_s: 480px;
+$break-point_m: 652px;
+$break-point_l: 968px;
 
 %reset-text-style {
   font-family: inherit;

@@ -13,15 +13,15 @@
     max-width: 968px;
     overflow: hidden;
 
-    @media screen and (max-width: 968px) {
+    @media screen and (max-width: $break-point_l) {
       max-width: 662px;
     }
 
-    @media screen and (max-width: 652px) {
+    @media screen and (max-width: $break-point_m) {
       width: 80%;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $break-point_s) {
       padding: 20px 10px;
       width: 100%;
     }
@@ -31,7 +31,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $break-point_s) {
       display: block;
     }
   }
@@ -45,7 +45,7 @@
       border-left: none;
     }
 
-    @media screen and (max-width: 968px) {
+    @media screen and (max-width: $break-point_l) {
       &:not(:nth-child(3n + 1)) {
         border: 1px solid $secondary_color;
       }
@@ -55,7 +55,7 @@
       }
     }
 
-    @media screen and (max-width: 652px) {
+    @media screen and (max-width: $break-point_m) {
       width: 100%;
 
       &:nth-child(2n + 2) {
@@ -63,7 +63,7 @@
       }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $break-point_s) {
       min-width: auto;
     }
   }
